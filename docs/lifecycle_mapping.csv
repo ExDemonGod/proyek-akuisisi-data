@@ -1,0 +1,7 @@
+Tahap,Aktivitas Utama,Contoh Tools,Risiko Jika Diabaikan
+Acquisition,"Mengambil data mentah dari sumber eksternal (API, Web Scraping, Database).","Requests, BeautifulSoup, Pandas",Kehilangan sumber data orisinal dan tidak bisa melakukan validasi ulang jika terjadi kesalahan.
+Storage,Menyimpan data mentah ke direktori khusus (data/raw) secara aman dan terstruktur.,"PostgreSQL, CSV, Parquet, Data Lake","Data berantakan, tercampur, hilang, atau melanggar aturan keamanan (security risk)."
+Cleaning,"Menghilangkan duplikasi, menangani nilai kosong (missing values), dan koreksi format.","Pandas, OpenRefine, NumPy","Model analisis menghasilkan keputusan yang salah (Garbage In, Garbage Out)."
+Transformation,"Mengubah bentuk data (feature engineering, normalisasi) agar siap dimodelkan.","Scikit-learn, Pandas, SQL",Algoritma machine learning gagal memproses data atau menghasilkan performa yang buruk.
+Analysis,"Menerapkan model statistik, machine learning, atau visualisasi untuk menarik kesimpulan.","Matplotlib, Seaborn, Scikit-learn","Kesimpulan analisis menjadi bias, keliru, atau tidak relevan dengan masalah bisnis."
+Delivery,"Menyajikan hasil akhir dalam bentuk dashboard, laporan, atau web app bagi pengguna.","Streamlit, Tableau, PowerBI",Stakeholder gagal memahami wawasan data dan keputusan bisnis tidak dapat dieksekusi.
